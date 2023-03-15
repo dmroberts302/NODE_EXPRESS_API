@@ -1,0 +1,21 @@
+You can think of a restful api as a waitress at a restaurant. The person dining is the client, the cook is the server and the waitress is the restful api. The waitress retrieves your request to make food and delivers that message to the cook she then brings your food/data to you.
+
+CLIENT -> GET / POST / PUT / DELETE ———>  REST API  —————> Database
+
+CLIENT <——— JSON / XML <- REST API <——— DATABASE
+
+node.js is javascript runtime that allows us developers to run javascript in terminals, console and not just websites (software environment)
+
+npm init -y - creates a new node.js project along with a package.json which is the configuration for your new project, package.json file contains important information about your project, such as its name, version, description, entry point, dependencies, and more
+
+your configuration file called package.json lists all the scripts you can run using npm
+your configuration file called package.json also has the name of main which is the head of your application so create a file with the value of main
+
+npm install --save express - installs express
+this command creates file package-lock.json, and folder node_modules
+package-lock.json contains the dependencies in node_modules along with their versions and other properties so that if this app is ran on another machine the exact dependencies used to develop are used to run the application
+node_modules contains all dependencies (dependencies are modules, library ... etc needed for the frameworks and environments to run)
+
+npm install --save-dev nodemon
+we install nodemon with the --save-dev dependency because it is not need for the app to run, however it is needed in development testing, linting and building code
+nodemon is used to run the server code every time something is changed within file
